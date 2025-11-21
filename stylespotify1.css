@@ -46,16 +46,20 @@ a{
     justify-content: center;
     height: 100px;
     padding: 0.5rem 0.75rem ;
-
 }
+
 .nav-option{
     line-height: 2.5rem;
     opacity: 0.7;
     padding: 0.5rem;
+    transition: 0.3s;
+    border-radius: 0.5rem;
+    cursor: pointer;
     
 }
 .nav-option:hover{
     opacity: 1;
+    background-color: #1f1f1f;
     
 }
 .nav-option i {
@@ -108,11 +112,13 @@ a{
 .box-p1 {
     font-size: 1rem;
     font-weight: 500;
+    opacity: 1;
 }
 
 .box-p2 {
     font-size: 0.85rem;
     opacity: 0.9rem;
+    opacity: 1;
 }
 .badge{
     background-color: #fff;
@@ -123,6 +129,12 @@ a{
     margin-top: 0.5rem;
     height: 2rem;
     width: fit-content;
+
+}
+badge:hover{
+    background-color: #e2e2e2;
+    transform: scale(1.05);
+    box-shadow: 0 0 12px rgba(255,255,255,0.2);
 }
 .dark-badge{
     background-color: #000;
@@ -141,6 +153,46 @@ a{
 .sticky-nav-icons  {
    margin-left: 0.75rem;
 }
+.sticky-nav-search {
+    background-color: #121212;
+    padding: 12px 20px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Search input with icon inside */
+.search-box {
+    width: 350px;
+    padding: 10px 15px 10px 40px; /* padding-left for icon space */
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    background-color: #2a2a2a;
+    color: white;
+    font-size: 14px;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="grey" height="16" viewBox="0 0 24 24" width="16" xmlns="http://www.w3.org/2000/svg"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zM10 14a4 4 0 110-8 4 4 0 010 8z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: 12px center;
+    background-size: 16px 16px;
+}
+
+
+.search-box::placeholder {
+    color: #b3b3b3;
+}
+
+
+.search-box:hover {
+    background-color: #3a3a3a;
+}
+
+
+.search-box:focus {
+    background-color: #404040;
+}
+
 .sticky-nav-options{
     display: flex;
     justify-content: center;
